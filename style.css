@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+header image {
+    width: 120px;
+
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+header ul li {
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+main {
+    background-color: greenyellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+gride-item {
+    width: 20px;
+    background-color: crimson;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+gride-item-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    background-color: tomato;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Media querie o punto de quiebre*/
+@media (max-width:800px) {
+    header {
+        background-color: darkorange;
+    }
+}
+
+@media(max-width:480px) {
+    header {
+        background-color: deeppink;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        background-image: url(https://e1.pxfuel.com/desktop-wallpaper/1/382/desktop-wallpaper-cool-rick-and-morty-iphone-rick-and-morty.jpg);
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    footer {
+        background-color: coral;
+    }
+}
